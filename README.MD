@@ -34,7 +34,7 @@ Navigate to the Go project folder:
 cd grade-calculator
 
 Run all unit tests:
-go test ./...
+go test -v ./...
 
 The command shows which tests pass or fail.
 
@@ -42,5 +42,8 @@ The command shows which tests pass or fail.
 
 From the grade-calculator folder, run:
 go test -coverprofile=coverage.out ./...
+
+Coverage breakdown command:
+go tool cover -func coverage.out
 
 Code coverage shows how much of the program is executed during testing.
